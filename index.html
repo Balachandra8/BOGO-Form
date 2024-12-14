@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOGO Design</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">
+      <span class="line"></span>
+      YAY! It’s BOGO
+      <span class="line"></span>
+    </h1>
+    
+    <!-- Box 1 -->
+    <div class="box" data-box="1">
+      <label for="unit1" class="box-content">
+        <!-- Left Section -->
+        <div class="left-section">
+          <input type="radio" id="radio1" name="unit" checked>
+          <div class="details">
+            <div class="unit">1 Unit <span class="discount">10% Off</span></div>
+            <div class="standard-price">Standard Price</div>
+          </div>
+        </div>
+        <!-- Right Section -->
+        <div class="right-section">
+          <div class="current-price">$22.60 USD</div>
+          <div class="old-price">$24.00 USD</div>
+        </div>
+
+        <!-- Dropdowns inside the box -->
+        <div class="dropdowns" id="dropdowns1">
+          <select id="size1">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+          <select id="color1">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+          </select>
+        </div>
+      </label>
+    </div>
+
+    <!-- Box 2 (Most Popular) -->
+    <div class="box most-popular" data-box="2">
+      <label for="unit2" class="box-content">
+        <div class="most-popular-tag">MOST POPULAR</div>
+        <div class="left-section">
+          <input type="radio" id="radio2" name="unit">
+          <div class="details">
+            <div class="unit">2 Unit <span class="discount">20% Off</span></div>
+          </div>
+        </div>
+        <div class="right-section">
+          <div class="current-price">$19.20 USD</div>
+          <div class="old-price">$24.00 USD</div>
+        </div>
+
+        <div class="dropdowns" id="dropdowns2">
+          <select id="size2">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+          <select id="color2">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+          </select>
+        </div>
+      </label>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="box" data-box="3">
+      <label for="unit3" class="box-content">
+        <div class="left-section">
+          <input type="radio" id="radio3" name="unit">
+          <div class="details">
+            <div class="unit">3 Unit <span class="discount">30% Off</span></div>
+          </div>
+        </div>
+        <div class="right-section">
+          <div class="current-price">$16.80 USD</div>
+          <div class="old-price">$24.00 USD</div>
+        </div>
+
+        <div class="dropdowns" id="dropdowns3">
+          <select id="size3">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+          <select id="color3">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+          </select>
+        </div>
+      </label>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p class="footer-left">Free Delivery</p>
+      <p class="footer-right">Total: <span class="total-price">$18.00 USD</span></p>
+    </div>
+
+    <div class="add-to-cart">
+      <button class="cart-button">
+        <span class="plus-sign">+</span> Add to Cart
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
