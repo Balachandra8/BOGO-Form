@@ -1,48 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Metadata for the page -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BOGO Design</title>
+  <!-- Link to external CSS for styling -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
+    <!-- Main title section with decoration -->
     <h1 class="title">
-      <span class="line"></span>
-      YAY! It’s BOGO
-      <span class="line"></span>
+      <span class="line"></span> <!-- Decorative line on the left -->
+      YAY! It’s BOGO <!-- Main title -->
+      <span class="line"></span> <!-- Decorative line on the right -->
     </h1>
-    
-    <!-- Box 1 -->
+
+    <!-- Box 1 (1 Unit with Discount) -->
     <div class="box" data-box="1">
       <label for="unit1" class="box-content">
-        <!-- Left Section -->
-        <div class="left-section">
-          <input type="radio" id="radio1" name="unit" checked>
-          <div class="details">
-            <div class="unit">1 Unit <span class="discount">10% Off</span></div>
-            <div class="standard-price">Standard Price</div>
+        <div class="top-section">
+          <!-- Left side with radio button and unit details -->
+          <div class="left-section">
+            <input type="radio" id="radio1" name="unit" checked> <!-- Radio button for selection -->
+            <div class="details">
+              <div class="unit">1 Unit <span class="discount">10% Off</span></div> <!-- Discount info -->
+              <div class="standard-price">Standard Price</div> <!-- Static label for standard price -->
+            </div>
+          </div>
+          <!-- Right side with price information -->
+          <div class="right-section">
+            <div class="current-price">$21.60 USD</div> <!-- Current price after discount -->
+            <div class="old-price">$24.00 USD</div> <!-- Original price -->
           </div>
         </div>
-        <!-- Right Section -->
-        <div class="right-section">
-          <div class="current-price">$22.60 USD</div>
-          <div class="old-price">$24.00 USD</div>
-        </div>
-
-        <!-- Dropdowns inside the box -->
+        <!-- Dropdowns for selecting size and color -->
         <div class="dropdowns" id="dropdowns1">
-          <select id="size1">
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-          </select>
-          <select id="color1">
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="green">Green</option>
-          </select>
+          <div class="dropdown-column">
+            <label class="dropdown-heading-1">Size</label>
+            <div class="dropdown-with-number">
+              <span class="dropdown-number">#1</span>
+              <select id="size1-1">
+                <option value="small">S</option>
+                <option value="medium">M</option>
+                <option value="large">L</option>
+              </select>
+            </div>
+          </div>
+          <div class="dropdown-column">
+            <label class="dropdown-heading">Colour</label>
+            <select id="color1-1">
+              <option value="black">Black</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select>
+          </div>
         </div>
       </label>
     </div>
@@ -50,68 +63,135 @@
     <!-- Box 2 (Most Popular) -->
     <div class="box most-popular" data-box="2">
       <label for="unit2" class="box-content">
+        <!-- Label for Most Popular Section -->
         <div class="most-popular-tag">MOST POPULAR</div>
-        <div class="left-section">
-          <input type="radio" id="radio2" name="unit">
-          <div class="details">
-            <div class="unit">2 Unit <span class="discount">20% Off</span></div>
+        <div class="top-section">
+          <div class="left-section">
+            <input type="radio" id="radio2" name="unit"> <!-- Radio button for selection -->
+            <div class="details">
+              <div class="unit">2 Unit <span class="discount">20% Off</span></div> <!-- Discount info -->
+              <div class="standard-price">Most Popular Price</div>
+            </div>
+          </div>
+          <!-- Right side with price information -->
+          <div class="right-section">
+            <div class="current-price">$38.40 USD</div> <!-- Current price after discount -->
+            <div class="old-price">$48.00 USD</div> <!-- Original price -->
           </div>
         </div>
-        <div class="right-section">
-          <div class="current-price">$19.20 USD</div>
-          <div class="old-price">$24.00 USD</div>
-        </div>
-
+        <!-- Dropdowns for selecting size and color (for 2 units) -->
         <div class="dropdowns" id="dropdowns2">
-          <select id="size2">
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-          </select>
-          <select id="color2">
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="green">Green</option>
-          </select>
+          <div class="dropdown-column">
+            <label class="dropdown-heading-1">Size</label>
+            <div class="dropdown-with-number">
+              <span class="dropdown-number">#1</span>
+              <select id="size2-1">
+                <option value="small">S</option>
+                <option value="medium">M</option>
+                <option value="large">L</option>
+              </select>
+            </div>
+            <div class="dropdown-with-number">
+              <span class="dropdown-number">#2</span>
+              <select id="size2-2">
+                <option value="small">S</option>
+                <option value="medium">M</option>
+                <option value="large">L</option>
+              </select>
+            </div>
+          </div>
+          <div class="dropdown-column">
+            <label class="dropdown-heading">Colour</label>
+            <select id="color2-1">
+              <option value="black">Black</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select>
+            <select id="color2-2">
+              <option value="black">Black</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select>
+          </div>
         </div>
       </label>
     </div>
 
-    <!-- Box 3 -->
+    <!-- Box 3 (3 Unit Discount) -->
     <div class="box" data-box="3">
       <label for="unit3" class="box-content">
-        <div class="left-section">
-          <input type="radio" id="radio3" name="unit">
-          <div class="details">
-            <div class="unit">3 Unit <span class="discount">30% Off</span></div>
+        <div class="top-section">
+          <div class="left-section">
+            <input type="radio" id="radio3" name="unit"> <!-- Radio button for selection -->
+            <div class="details">
+              <div class="unit">3 Unit <span class="discount">30% Off</span></div> <!-- Discount info -->
+              <div class="standard-price">Premium Price</div>
+            </div>
+          </div>
+          <!-- Right side with price information -->
+          <div class="right-section">
+            <div class="current-price">$50.40 USD</div> <!-- Current price after discount -->
+            <div class="old-price">$72.00 USD</div> <!-- Original price -->
           </div>
         </div>
-        <div class="right-section">
-          <div class="current-price">$16.80 USD</div>
-          <div class="old-price">$24.00 USD</div>
-        </div>
-
+        <!-- Dropdowns for selecting size and color (for 3 units) -->
         <div class="dropdowns" id="dropdowns3">
-          <select id="size3">
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-          </select>
-          <select id="color3">
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="green">Green</option>
-          </select>
+          <div class="dropdown-column">
+            <label class="dropdown-heading-1">Size</label>
+            <div class="dropdown-with-number">
+              <span class="dropdown-number">#1</span>
+              <select id="size3-1">
+                <option value="small">S</option>
+                <option value="medium">M</option>
+                <option value="large">L</option>
+              </select>
+            </div>
+            <div class="dropdown-with-number">
+              <span class="dropdown-number">#2</span>
+              <select id="size3-2">
+                <option value="small">S</option>
+                <option value="medium">M</option>
+                <option value="large">L</option>
+              </select>
+            </div>
+            <div class="dropdown-with-number">
+              <span class="dropdown-number">#3</span>
+              <select id="size3-3">
+                <option value="small">S</option>
+                <option value="medium">M</option>
+                <option value="large">L</option>
+              </select>
+            </div>
+          </div>
+          <div class="dropdown-column">
+            <label class="dropdown-heading">Colour</label>
+            <select id="color3-1">
+              <option value="black">Black</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select>
+            <select id="color3-2">
+              <option value="black">Black</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select>
+            <select id="color3-3">
+              <option value="black">Black</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select>
+          </div>
         </div>
       </label>
     </div>
 
-    <!-- Footer -->
+    <!-- Footer section with delivery info and total price -->
     <div class="footer">
-      <p class="footer-left">Free Delivery</p>
-      <p class="footer-right">Total: <span class="total-price">$18.00 USD</span></p>
+      <p class="footer-left">Free Delivery</p> <!-- Delivery information -->
+      <p class="footer-right">Total: <span class="total-price">$21.60 USD</span></p> <!-- Total price display -->
     </div>
 
+    <!-- Button to add selected items to the cart -->
     <div class="add-to-cart">
       <button class="cart-button">
         <span class="plus-sign">+</span> Add to Cart
@@ -119,6 +199,7 @@
     </div>
   </div>
 
+  <!-- External JavaScript file for interactivity -->
   <script src="script.js"></script>
 </body>
 </html>
